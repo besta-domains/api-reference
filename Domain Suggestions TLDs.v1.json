@@ -342,7 +342,7 @@
               }
             }
           },
-          "description": "POST data uses same keys/values as Query Params. Please refer to Query Params for descriptions. If using POST request, you may choose to send some variables as POST data, and others as Query Params. If both are sent for the same key, Query Params will be preferred."
+          "description": "POST data uses same keys/values as Query Params. Please refer to Query Params for descriptions. If using POST request, you may choose to send some variables as POST data, and others as Query Params. If both are sent for the same key, Query Params will be preferred. More options coming soon. To learn more, please see https://besta.domains/api."
         }
       }
     }
