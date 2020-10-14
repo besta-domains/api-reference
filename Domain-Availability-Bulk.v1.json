@@ -79,12 +79,8 @@
                 "type": "object",
                 "properties": {
                   "domains": {
-                    "type": "object",
-                    "properties": {
-                      "\"example.com\"": {
-                        "type": "string"
-                      }
-                    }
+                    "type": "array",
+                    "items": {}
                   }
                 }
               }
