@@ -163,7 +163,7 @@
             },
             "in": "query",
             "name": "tld",
-            "description": "(optional) (default=\"com\") The TLD you wish to use. No spaces, no quotes, NO dot. Must be a valid TLD. We do not check validity of TLD you send. "
+            "description": "(optional) (default=\"com\") The TLD you wish to use. No spaces, no quotes, NO dot. Must be a valid TLD. We do not check validity of TLD you send. If you specify a TLD as part of the domain, then this value will be ignored."
           },
           {
             "schema": {
@@ -171,7 +171,7 @@
             },
             "in": "query",
             "name": "tlds_use",
-            "description": "(optional) (default=[\"com\"]) For your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. "
+            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
           },
           {
             "schema": {
@@ -353,7 +353,7 @@
             },
             "in": "query",
             "name": "str",
-            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nIMPORTANT: When testing here (on RapidAPI.com), WAIT A SECOND after typing before hitting \"Enter\". Their UI has a lag, and may cut off your text when sending.",
+            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nIMPORTANT: When testing here (on RapidAPI.com), WAIT A SECOND after typing before hitting \"Enter\". Their UI has a lag, and may cut off your text when sending.\n\n",
             "required": true
           },
           {
@@ -370,7 +370,7 @@
             },
             "in": "query",
             "name": "tlds_use",
-            "description": "(optional) (default=[\"com\"]) For your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. "
+            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
           },
           {
             "schema": {
