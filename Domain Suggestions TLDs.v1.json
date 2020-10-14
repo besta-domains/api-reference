@@ -12,7 +12,7 @@
   },
   "servers": [
     {
-      "url": "api.besta.domains"
+      "url": "142.93.251.57"
     }
   ],
   "paths": {
@@ -311,7 +311,7 @@
             }
           }
         },
-        "description": "100s of domain name suggestions + related TLDs. More options (Query Params / POST data) will be added as soon as they are available and tested. Please check back soon. Read more indepth documentation (and learn more) at https://besta.domains/api",
+        "description": "100s of domain name suggestions + related TLDs. More options (Query Params / POST data) will be added as soon as they are available and tested. Please check back soon. Read more at https://besta.domains/api",
         "tags": [
           "v1"
         ],

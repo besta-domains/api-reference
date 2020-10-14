@@ -12,7 +12,7 @@
   },
   "servers": [
     {
-      "url": "api.besta.domains"
+      "url": "142.93.251.57"
     }
   ],
   "paths": {
@@ -133,7 +133,8 @@
     }
   },
   "components": {
-    "schemas": {}
+    "schemas": {},
+    "securitySchemes": {}
   },
   "tags": [
     {
