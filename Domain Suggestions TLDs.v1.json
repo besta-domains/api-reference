@@ -177,7 +177,8 @@
             "schema": {
               "type": "number",
               "minimum": 1,
-              "maximum": 100
+              "maximum": 100,
+              "default": 30
             },
             "in": "query",
             "name": "num_tlds",
@@ -185,7 +186,8 @@
           },
           {
             "schema": {
-              "type": "boolean"
+              "type": "boolean",
+              "default": "true"
             },
             "in": "query",
             "name": "use_generic_tlds",
@@ -193,7 +195,8 @@
           },
           {
             "schema": {
-              "type": "boolean"
+              "type": "boolean",
+              "default": "false"
             },
             "in": "query",
             "name": "all_in_one_list",
@@ -376,7 +379,8 @@
             "schema": {
               "type": "number",
               "minimum": 1,
-              "maximum": 100
+              "maximum": 100,
+              "default": 30
             },
             "in": "query",
             "name": "num_tlds",
@@ -384,7 +388,8 @@
           },
           {
             "schema": {
-              "type": "boolean"
+              "type": "boolean",
+              "default": "true"
             },
             "in": "query",
             "name": "use_generic_tlds",
@@ -392,7 +397,8 @@
           },
           {
             "schema": {
-              "type": "boolean"
+              "type": "boolean",
+              "default": "false"
             },
             "in": "query",
             "name": "all_in_one_list",
