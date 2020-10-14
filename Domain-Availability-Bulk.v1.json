@@ -24,7 +24,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n0: not checked, unknown\n1-9: not available\n10: available to purchase!\n100-9,999,999: premium or aftermarket. Code = purchase price.\n10,000,000: listed in aftermarket, but asking price is unknown\n100,000,000+: not available, not listed, but expiring soon! Code = expiration date, as Unix timestamp.",
             "content": {
               "application/json": {
                 "schema": {
@@ -34,10 +34,7 @@
                     "domains": {
                       "type": "object"
                     }
-                  },
-                  "required": [
-                    "domains"
-                  ]
+                  }
                 },
                 "examples": {
                   "unavailable.co, premium.net, availableasffd.io": {
@@ -54,30 +51,84 @@
             }
           }
         },
-        "operationId": "Availability",
+        "operationId": "GET/v1/Availability",
         "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Currently: only availability/aftermarket detection works reliably. Coming soon: option to check expiration date, validity, and price. Please read more at https://besta.domains/api",
         "parameters": [
           {
-            "schema": {
-              "type": "array"
-            },
+            "schema": {},
             "in": "query",
             "name": "domains",
             "description": "Array or \"comma,separated,string\" of domains to check. TLD must be included. Spaces are allowed.",
             "required": true
           }
-        ],
+        ]
+      },
+      "post": {
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
+                "description": "",
                 "type": "object",
-                "properties": {}
+                "properties": {
+                  "domains": {
+                    "type": "object",
+                    "properties": {
+                      "\"example.com\"": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
               }
             }
           },
-          "description": "POST method is also allowed, and preferred! Be sure to use `content-type: application/json`. POST is not documented because documentation and demonstration is easier for GET. However, if you can, please use POST requests. It will be supported and preferred in all future versions. Both GET and POST accept the same variables. Please refer to GET Query Parameter definition for type and description. Using a POST request, you may mix and match Query Parameters and POST data. For example, send ?domain=example.com in querystring, but send everything else as POST data."
-        }
+          "description": "POST data uses same keys/values as Query Params. Please refer to Query Params for descriptions. If using POST request, you may choose to send some variables as POST data, and others as Query Params. If both are sent for the same key, Query Params will be preferred."
+        },
+        "summary": "Check 100 domain names at a time! Find which are available, aftermarket, expiring, invalid, etc.",
+        "tags": [
+          "v1"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n0: not checked, unknown\n1-9: not available\n10: available to purchase!\n100-9,999,999: premium or aftermarket. Code = purchase price.\n10,000,000: listed in aftermarket, but asking price is unknown\n100,000,000+: not available, not listed, but expiring soon! Code = expiration date, as Unix timestamp.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "domains": {
+                      "type": "object"
+                    }
+                  }
+                },
+                "examples": {
+                  "unavailable.co, premium.net, availableasffd.io": {
+                    "value": {
+                      "domains": {
+                        "unavailable.co": 10,
+                        "premium.net": 31459,
+                        "availableasffd.io": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "POST/v1/Availability",
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Currently: only availability/aftermarket detection works reliably. Coming soon: option to check expiration date, validity, and price. Please read more at https://besta.domains/api",
+        "parameters": [
+          {
+            "schema": {},
+            "in": "query",
+            "name": "domains",
+            "description": "Array or \"comma,separated,string\" of domains to check. TLD must be included. Spaces are allowed.",
+            "required": true
+          }
+        ]
       }
     }
   },
