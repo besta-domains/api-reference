@@ -2,13 +2,13 @@ openapi: 3.0.0
 info:
   title: Manage Your Account
   version: '1.0'
-  description: ''
+  description: 'Contact form backend. More coming soon.'
   termsOfService: 'https://besta.domains/terms'
   contact:
     name: Paul Shorey
     url: paulshorey.com
 servers:
-  - url: api.besta.domains
+  - url: 142.93.251.57
 paths:
   /v1/contact:
     get:
@@ -16,7 +16,14 @@ paths:
       tags:
         - v1
       responses: {}
-      operationId: Contact Form
+      operationId: GET/v1/contact
+      description: Send contact form directly from front-end. Uses Captcha to block spam.
+    post:
+      summary: ''
+      operationId: POST/v1/contact
+      responses:
+        '200':
+          description: OK
       description: Send contact form directly from front-end. Uses Captcha to block spam.
 components:
   schemas: {}
