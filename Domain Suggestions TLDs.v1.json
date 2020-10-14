@@ -171,7 +171,7 @@
             },
             "in": "query",
             "name": "tlds_use",
-            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
+            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, you may send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
           },
           {
             "schema": {
@@ -370,7 +370,7 @@
             },
             "in": "query",
             "name": "tlds_use",
-            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
+            "description": "(optional) (experimental) (default=[\"com\"]) Use multiple TLDs, ordered by importance. First TLD will be considered much more important than others. We will also find other relevant TLDs whether you send this value or not, as part of our suggestions. However, this list will be used first. Then, our relevant TLD suggestions will be added after this.\n\nFor your convenience, you may send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. If you specify a TLD as part of the \"domain\", or specify a \"tld\", then this value will be ignored."
           },
           {
             "schema": {
