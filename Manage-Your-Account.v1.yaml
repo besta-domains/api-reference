@@ -11,20 +11,15 @@ servers:
   - url: 'http://142.93.251.57'
 paths:
   /v1/contact:
-    get:
-      summary: Contact Form
-      tags:
-        - v1
-      responses: {}
-      operationId: GET/v1/contact
-      description: Send contact form directly from front-end. Uses Captcha to block spam.
-    post:
+    put:
       summary: ''
-      operationId: POST/v1/contact
+      operationId: PUT/v1/contact
       responses:
         '200':
           description: OK
       description: Send contact form directly from front-end. Uses Captcha to block spam.
+      tags:
+        - v1
 components:
   schemas: {}
 tags:
