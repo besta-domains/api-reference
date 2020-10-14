@@ -159,6 +159,14 @@
           },
           {
             "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "tlds_use",
+            "description": "(optional) (default=[\"com\"]) For your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. "
+          },
+          {
+            "schema": {
               "type": "number",
               "minimum": 1,
               "maximum": 100
@@ -324,6 +332,14 @@
             "name": "domain",
             "description": "The domain you are searching for, but is not available. We'll use the name and TLD from this string. We'll parse it, separate real words and brand names, and use this information to find relevant suggestions. TLD can be omitted. We'll assume \".com\". Spaces are allowed. Spaces are encouraged! If your visitor types in a phrase with spaces, please do not strip them out! Please leave them.\n\nIMPORTANT: When testing here (on RapidAPI.com), WAIT A SECOND after typing before hitting \"Enter\". Their UI has a lag, and may cut off your text when sending.",
             "required": true
+          },
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "tlds_use",
+            "description": "(optional) (default=[\"com\"]) For your convenience, send either: 1) JSON Array 2) or \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed. "
           },
           {
             "schema": {

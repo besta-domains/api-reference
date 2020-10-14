@@ -31,8 +31,13 @@
                   "description": "",
                   "type": "object",
                   "properties": {
-                    "domains": {
-                      "type": "object"
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "domains": {
+                          "type": "object"
+                        }
+                      }
                     }
                   }
                 },
@@ -60,7 +65,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Array or \"comma,separated,string\" of domains to check. TLD must be included. Spaces are allowed.",
+            "description": "For your convenience, send either: 1) JSON Array 2) \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed.",
             "required": true
           }
         ]
@@ -100,8 +105,13 @@
                   "description": "",
                   "type": "object",
                   "properties": {
-                    "domains": {
-                      "type": "object"
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "domains": {
+                          "type": "object"
+                        }
+                      }
                     }
                   }
                 },
@@ -129,7 +139,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Array or \"comma,separated,string\" of domains to check. TLD must be included. Spaces are allowed.",
+            "description": "For your convenience, send either: 1) JSON Array 2) \"comma, separated, string\" with no quotes. TLD must be included. Spaces are allowed.",
             "required": true
           }
         ]
