@@ -7,7 +7,7 @@
       "name": "Paul Shorey",
       "url": "https://paulshorey.com"
     },
-    "description": "Return 100s of relevant domain name suggestions + related TLDs, ordered by relevance. Many of them will be available and valuable. You can choose which TLDs to use, promote, or demote. Use our other API suite to \"manage your account\" to configure your site preferences (coming soon). Also see our \"Domain Availability Bulk\" API \"https://rapidapi.com/besta-domains/api/domain-availability-bulk\". Please read more at https://besta.domains/api.",
+    "description": "Return 100s of relevant domain name suggestions + related TLDs, ordered by relevance. Many of them will be available and valuable. You can choose which TLDs to use, promote, or demote. Use our other API suite to \"manage your account\" to configure your site preferences (coming soon). Also see our \"Domain Availability Bulk\" API \"https://rapidapi.com/besta-domains/api/domain-availability-bulk\". Please read more at https://besta.domains/api",
     "termsOfService": "https://besta.domains/terms"
   },
   "servers": [
@@ -147,7 +147,7 @@
             }
           }
         },
-        "description": "100s of domain name suggestions + related TLDs. More options (Query Params / POST data) will be added as soon as they are available and tested. Please check back soon. Read more indepth documentation (and learn more) at https://besta.domains/api",
+        "description": "100s of domain name suggestions + related TLDs. More options and features will be added as soon as they are thoroughly tested. Please check back soon. Read more at https://besta.domains/api",
         "tags": [
           "v1"
         ],
@@ -161,6 +161,14 @@
             "name": "domain",
             "description": "The domain you are searching for, but is not available. We'll use the name and TLD from this string. We'll parse it, separate real words and brand names, and use this information to find relevant suggestions. TLD can be omitted. We'll assume \".com\". Spaces are allowed. Spaces are encouraged! If your visitor types in a phrase with spaces, please do not strip them out! Please leave them.",
             "required": true
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "all_in_one_list",
+            "description": "(coming soon) Currently, suggestions are returned in several lists - grouped by type of manipulation. Set this to true, to return all suggestions mixed into one list. We're still deciding the best strategy to mix and sort the different types of suggestions. Please tell us your thoughts: https://besta.domains/contact"
           }
         ],
         "requestBody": {
@@ -311,7 +319,7 @@
             }
           }
         },
-        "description": "100s of domain name suggestions + related TLDs. More options (Query Params / POST data) will be added as soon as they are available and tested. Please check back soon. Read more at https://besta.domains/api",
+        "description": "100s of domain name suggestions + related TLDs. More options (Query Params / POST data) will be added as soon as they are available and tested. Please check back soon. Also see our Availability API (https://rapidapi.com/besta-domains/api/domain-availability-bulk). This is an initial alpha release. More options and features coming soon. All changes will be backward compatible, so feel free to start using. Read more about this API and future improvements at https://besta.domains/api",
         "tags": [
           "v1"
         ],
