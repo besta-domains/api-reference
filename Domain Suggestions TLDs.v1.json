@@ -325,6 +325,17 @@
             "name": "domain",
             "description": "The domain you are searching for, but is not available. We'll use the name and TLD from this string. We'll parse it, separate real words and brand names, and use this information to find relevant suggestions. TLD can be omitted. We'll assume \".com\". Spaces are allowed. Spaces are encouraged! If your visitor types in a phrase with spaces, please do not strip them out! Please leave them.",
             "required": true
+          },
+          {
+            "in": "unknown"
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "all_in_one_list",
+            "description": "(coming soon!) currently, suggestions are returned in several lists, grouped by type of modification. With this set to true, receive suggestions all in one list. We're still deciding the best strategy for combining and sorting. Please tell us your thoughts. https://besta.domains/contact"
           }
         ],
         "requestBody": {
