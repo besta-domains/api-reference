@@ -7,7 +7,7 @@
       "name": "Paul Shorey",
       "url": "https://paulshorey.com"
     },
-    "description": "Return 100s of relevant domain name suggestions + related TLDs, ordered by relevance. Many of them will be available and valuable. You can choose which TLDs to use, promote, or demote. Use our other API suite to \"manage your account\" to configure your site preferences (coming soon).",
+    "description": "Return 100s of relevant domain name suggestions + related TLDs, ordered by relevance. Many of them will be available and valuable. You can choose which TLDs to use, promote, or demote. Use our other API suite to \"manage your account\" to configure your site preferences (coming soon). Also see our \"Domain Availability Bulk\" API \"https://rapidapi.com/besta-domains/api/domain-availability-bulk\". Please read more at https://besta.domains/api.",
     "termsOfService": "https://besta.domains/terms"
   },
   "servers": [
