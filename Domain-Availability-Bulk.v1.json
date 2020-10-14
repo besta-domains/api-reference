@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Domain Availability 100",
+    "title": "Domain Availability Bulk",
     "version": "1.0",
     "description": "Check availability of 100 domain names at a time! This also returns if the domain is listed in the aftermarket marketplaces. Coming soon: expiration date and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more at https://besta.domains/api.",
     "contact": {
@@ -12,7 +12,7 @@
   },
   "servers": [
     {
-      "url": "142.93.251.57"
+      "url": "http://142.93.251.57"
     }
   ],
   "paths": {
