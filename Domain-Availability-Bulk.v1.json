@@ -3,7 +3,7 @@
   "info": {
     "title": "Domain Availability 100",
     "version": "1.0",
-    "description": "",
+    "description": "Check availability of 100 domain names at a time! This also returns if the domain is listed in the aftermarket marketplaces. Coming soon: expiration date and price. Please read more at https://besta.domains/api",
     "contact": {
       "url": "paulshorey.com",
       "name": "Paul Shorey"

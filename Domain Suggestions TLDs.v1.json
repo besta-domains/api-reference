@@ -5,9 +5,9 @@
     "version": "1.0",
     "contact": {
       "name": "Paul Shorey",
-      "url": "paulshorey.com"
+      "url": "https://paulshorey.com"
     },
-    "description": "",
+    "description": "Return 100s of relevant domain name suggestions + related TLDs, ordered by relevance. Many of them will be available and valuable. You can choose which TLDs to use, promote, or demote. Use our other API suite to \"manage your account\" to configure your site preferences (coming soon).",
     "termsOfService": "https://besta.domains/terms"
   },
   "servers": [
