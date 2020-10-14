@@ -17,7 +17,7 @@
   ],
   "paths": {
     "/v1/availability": {
-      "post": {
+      "get": {
         "summary": "Check 100 domain names at a time! Find which are available, aftermarket, expiring, invalid, etc.",
         "tags": [
           "v1"
@@ -55,7 +55,29 @@
           }
         },
         "operationId": "Availability",
-        "description": "Check 100 domain names at a time! Find which are available, aftermarket, expiring, invalid, etc."
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Currently: only availability/aftermarket detection works reliably. Coming soon: option to check expiration date, validity, and price. Please read more at https://besta.domains/api",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array"
+            },
+            "in": "query",
+            "name": "domains",
+            "description": "Array or \"comma,separated,string\" of domains to check. TLD must be included. Spaces are allowed.",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          },
+          "description": "POST method is also allowed, and preferred! Be sure to use `content-type: application/json`. POST is not documented because documentation and demonstration is easier for GET. However, if you can, please use POST requests. It will be supported and preferred in all future versions. Both GET and POST accept the same variables. Please refer to GET Query Parameter definition for type and description. Using a POST request, you may mix and match Query Parameters and POST data. For example, send ?domain=example.com in querystring, but send everything else as POST data."
+        }
       }
     }
   },
