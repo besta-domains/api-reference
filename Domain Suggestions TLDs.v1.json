@@ -183,24 +183,7 @@
             "name": "all_in_one_list",
             "description": "(coming soon) Currently, suggestions are returned in several lists - grouped by type of manipulation. Set this to true, to return all suggestions mixed into one list. We're still deciding the best strategy to mix and sort the different types of suggestions. Please tell us your thoughts: https://besta.domains/contact"
           }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {}
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "type": "object",
-                "properties": {}
-              }
-            }
-          },
-          "description": ""
-        }
+        ]
       },
       "post": {
         "summary": "100s of domain name suggestions + related TLDs",
