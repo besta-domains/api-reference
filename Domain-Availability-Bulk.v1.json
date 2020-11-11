@@ -24,7 +24,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n0: not checked, unknown\n1-9: not available\n10: available to purchase!\n100-9,999,999: premium or aftermarket. Code = purchase price.\n10,000,000: listed in aftermarket, but asking price is unknown\n100,000,000+: not available, not listed, but expiring soon! Code = expiration date, as Unix timestamp.",
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n-1: unknown, not able to check\n0: new, did not check\n1: unavailable\n2: available\n3: registry premium (buy it now for higher price than such TLD normally sells for)\n4: aftermarket premium (buy it now or make an offer, also could be in an auction)\n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)\n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)",
             "content": {
               "application/json": {
                 "schema": {
@@ -34,7 +34,16 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "domains": {
+                        "method": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "object"
+                        },
+                        "note": {
+                          "type": "object"
+                        },
+                        "ns": {
                           "type": "object"
                         }
                       }
@@ -42,12 +51,17 @@
                   }
                 },
                 "examples": {
-                  "unavailable.co, premium.net, availableasffd.io": {
+                  "premium.net, greata.domains, perfect.domains": {
                     "value": {
-                      "domains": {
-                        "unavailable.co": 10,
-                        "premium.net": 31459,
-                        "availableasffd.io": 1
+                      "method": "domainr",
+                      "status": {
+                        "premium.net": 4,
+                        "besta.domains": 1,
+                        "greata.domains": 2,
+                        "perfect.domains": 3,
+                        "true.domains": 4,
+                        "best.domains": 1,
+                        "new.domains": 5
                       }
                     }
                   }
@@ -57,7 +71,7 @@
           }
         },
         "operationId": "GET/v1/Availability",
-        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". This API is still in development, but is stable. All future changes will be backward compatible. Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
         "parameters": [
           {
             "schema": {
@@ -94,7 +108,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n0: not checked, unknown\n1-9: not available\n10: available to purchase!\n100-9,999,999: premium or aftermarket. Code = purchase price.\n10,000,000: listed in aftermarket, but asking price is unknown\n100,000,000+: not available, not listed, but expiring soon! Code = expiration date, as Unix timestamp.",
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n-1: unknown, not able to check\n0: new, did not check\n1: unavailable\n2: available\n3: registry premium (buy it now for higher price than such TLD normally sells for)\n4: aftermarket premium (buy it now or make an offer, also could be in an auction)\n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)\n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)",
             "content": {
               "application/json": {
                 "schema": {
@@ -104,7 +118,16 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "domains": {
+                        "method": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "object"
+                        },
+                        "note": {
+                          "type": "object"
+                        },
+                        "ns": {
                           "type": "object"
                         }
                       }
@@ -112,12 +135,17 @@
                   }
                 },
                 "examples": {
-                  "unavailable.co, premium.net, availableasffd.io": {
+                  "premium.net, greata.domains, perfect.domains": {
                     "value": {
-                      "domains": {
-                        "unavailable.co": 10,
-                        "premium.net": 31459,
-                        "availableasffd.io": 1
+                      "method": "domainr",
+                      "status": {
+                        "premium.net": 4,
+                        "besta.domains": 1,
+                        "greata.domains": 2,
+                        "perfect.domains": 3,
+                        "true.domains": 4,
+                        "best.domains": 1,
+                        "new.domains": 5
                       }
                     }
                   }
@@ -127,7 +155,7 @@
           }
         },
         "operationId": "POST/v1/Availability",
-        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". This API is still in development, but is stable. All future changes will be backward compatible. Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
         "parameters": [
           {
             "schema": {
