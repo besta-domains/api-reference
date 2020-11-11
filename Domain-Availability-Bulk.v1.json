@@ -74,10 +74,12 @@
         "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
         "parameters": [
           {
-            "schema": {},
+            "schema": {
+              "type": "string"
+            },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: \"comma, separated, string\" without quotes (one.co, two.com). Or a JSON Array ([\"one.co\",\"two.com\"]). If using Query Params, remember to url_encode the Array.\n\nThis API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST.",
+            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
             "required": true
           }
         ]
@@ -156,10 +158,12 @@
         "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
         "parameters": [
           {
-            "schema": {},
+            "schema": {
+              "type": "string"
+            },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: \"comma, separated, string\" without quotes (one.co, two.com). Or a JSON Array ([\"one.co\",\"two.com\"]). If using Query Params, remember to url_encode the Array.\n\nThis API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST.",
+            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
             "required": true
           }
         ]
