@@ -87,7 +87,7 @@
             },
             "in": "query",
             "name": "show_metadata",
-            "description": "Optional. Default is \"false\". If \"true\", will show more info about each domain. If using Domainr API, will include a \"domainr\" dictionary, with their \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
+            "description": "Optional. Default is \"false\". If \"true\", will show a \"note\" about each domain. If using Domainr API, the note will be their original \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
           },
           {
             "schema": {
@@ -186,7 +186,7 @@
             },
             "in": "query",
             "name": "show_metadata",
-            "description": "Optional. Default is \"false\". If \"true\", will show more info about each domain. If using Domainr API, will include a \"domainr\" dictionary, with their \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
+            "description": "Optional. Default is \"false\". If \"true\", will show a \"note\" about each domain. If using Domainr API, the note will be their original \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
           },
           {
             "schema": {
