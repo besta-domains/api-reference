@@ -79,8 +79,23 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST method.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
-            "required": true
+            "description": "Your choice: send a comma separated string without quotes (one.co, two.com, three.io) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST."
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "show_metadata",
+            "description": "Optional. Default is \"false\". If \"true\", will show more info about each domain. If using Domainr API, will include a \"domainr\" dictionary, with their \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "method",
+            "description": "Optional. Default is \"domainr\". Coming soon, specify new ways to discover domain info. Read more at https://besta.domains/api"
           }
         ]
       },
@@ -163,7 +178,23 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST."
+            "description": "Your choice: send a comma separated string without quotes (one.co, two.com, three.io) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST."
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "show_metadata",
+            "description": "Optional. Default is \"false\". If \"true\", will show more info about each domain. If using Domainr API, will include a \"domainr\" dictionary, with their \"status\" message for each of the requested domains. When using WHOIS/NameServer method (coming soon), will show nameserver, aftermarket, and expiration dates when available."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "method",
+            "description": "Optional. Default is \"domainr\". Coming soon, specify new ways to discover domain info. Read more at https://besta.domains/api"
           }
         ]
       }
