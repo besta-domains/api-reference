@@ -71,7 +71,7 @@
           }
         },
         "operationId": "GET/v1/Availability",
-        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions\" API. Read more at https://besta.domains/api. Try the demo app: https://besta.domains",
         "parameters": [
           {
             "schema": {
@@ -155,7 +155,7 @@
           }
         },
         "operationId": "POST/v1/Availability",
-        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions TLDs\" API \"https://rapidapi.com/besta-domains/api/domain-suggestions-tlds\". Please read more and learn about our plans for the future: https://besta.domains/api. See demo app, using this API: https://besta.domains",
+        "description": "Check 100 domain names at a time. Find which are available, aftermarket, expiring, invalid, etc. Availability/aftermarket detection are already work reliably/accurately and very fast. Coming soon: option to check expiration date, validity, and price. Also see our \"Domain Suggestions\" API. Read more at https://besta.domains/api. Try the demo app: https://besta.domains",
         "parameters": [
           {
             "schema": {
