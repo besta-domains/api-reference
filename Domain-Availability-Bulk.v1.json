@@ -79,7 +79,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "If you prefer, instead of a JSON Array, you may send a \"comma, separated, string\" without quotes. Example: [\"one.co\",\"two.com\"] or \"one.co, two.com\".\n\nThis is useful because this API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST data and JSON Array.",
+            "description": "Your choice: \"comma, separated, string\" without quotes (one.co, two.com). Or a JSON Array ([\"one.co\",\"two.com\"]). If using Query Params, remember to url_encode the Array.\n\nThis API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST.",
             "required": true
           }
         ]
@@ -163,7 +163,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "If you prefer, instead of a JSON Array, you may send a \"comma, separated, string\" without quotes. Example: [\"one.co\",\"two.com\"] or \"one.co, two.com\".\n\nThis is useful because this API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST data and JSON Array.",
+            "description": "Your choice: \"comma, separated, string\" without quotes (one.co, two.com). Or a JSON Array ([\"one.co\",\"two.com\"]). If using Query Params, remember to url_encode the Array.\n\nThis API accepts both GET or POST requests. Your choice. Both are treated as a request for data. Although, we recommend you use POST.",
             "required": true
           }
         ]
