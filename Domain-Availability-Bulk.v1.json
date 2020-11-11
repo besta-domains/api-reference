@@ -79,7 +79,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
+            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST method.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
             "required": true
           }
         ]
@@ -163,8 +163,7 @@
             },
             "in": "query",
             "name": "domains",
-            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST.",
-            "required": true
+            "description": "Your choice: send \"comma, separated, string\" without quotes (one.co, two.com) via Query Params. Or a JSON Array ([\"one.co\",\"two.com\"]) via POST data.\n\nThis API accepts both GET or POST requests, for your convenience. Both are treated as a request for data. We recommend you use POST."
           }
         ]
       }
