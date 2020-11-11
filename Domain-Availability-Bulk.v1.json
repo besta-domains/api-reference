@@ -24,7 +24,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n-1: unknown, not able to check\n0: new, did not check\n1: unavailable\n2: available\n3: registry premium (buy it now for higher price than such TLD normally sells for)\n4: aftermarket premium (buy it now or make an offer, also could be in an auction)\n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)\n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)",
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:  \n-1: unknown, not able to check  \n0: new, did not check  \n1: unavailable  \n2: available  \n3: registry premium (buy it now for higher price than such TLD normally sells for)  \n4: aftermarket premium (buy it now or make an offer, also could be in an auction)  \n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)  \n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)  ",
             "content": {
               "application/json": {
                 "schema": {
@@ -108,7 +108,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:\n-1: unknown, not able to check\n0: new, did not check\n1: unavailable\n2: available\n3: registry premium (buy it now for higher price than such TLD normally sells for)\n4: aftermarket premium (buy it now or make an offer, also could be in an auction)\n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)\n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)",
+            "description": "Returns data object. Within that object is another object called \"domains\". It contains key/value pairs. Key is the domain name which you sent. Value is a status code. Codes:  \n-1: unknown, not able to check  \n0: new, did not check  \n1: unavailable  \n2: available  \n3: registry premium (buy it now for higher price than such TLD normally sells for)  \n4: aftermarket premium (buy it now or make an offer, also could be in an auction)  \n5: registry super-premium (must submit offer, more expensive than regular premium SLDs)  \n6: unavailable, but expiring soon (may include expiration date in respnose: check data.expiration)  ",
             "content": {
               "application/json": {
                 "schema": {
