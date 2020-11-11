@@ -154,7 +154,7 @@
             },
             "in": "query",
             "name": "domain",
-            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nIMPORTANT: When testing here (on RapidAPI.com), WAIT A SECOND after typing before hitting \"Enter\". Their UI has a lag, and may cut off your text when sending.",
+            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nNOTE: When testing on RapidAPI.com, wait a second after typing before hitting \"Enter\". RapidAPI input fields have a lag, and may cut off your text if submitted too fast.",
             "required": true
           },
           {
@@ -356,7 +356,7 @@
             },
             "in": "query",
             "name": "str",
-            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nNOTE: When testing here (on RapidAPI.com), wait a second after typing before hitting \"Enter\". RapidAPI form input has a lag, and may cut off your text if entered too fast.\n\n",
+            "description": "The domain you are searching for, with or without the TLD. Spaces are allowed, and encouraged! Keeping spaces helps us decide where to break the words. But we usually break the word just fine even without spaces. Try it a few times! Please let us know how it goes.\n\nNOTE: When testing on RapidAPI.com, wait a second after typing before hitting \"Enter\". RapidAPI input fields have a lag, and may cut off your text if submitted too fast.",
             "required": true
           },
           {
