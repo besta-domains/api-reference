@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: Domain Search Tools
   version: '1.0'
-  description: 'WHOIS, name servers, suggestions, availability, aftermarket, etc. This is the "simple + cheap" version for $0.0001/request. More endpoints coming soon. Please see our advanced premium tools: "Domain Suggestions TLDs" and "Domain Availability Bulk". Documentation at https://besta.domains/api'
+  description: 'WHOIS, name servers, suggestions, availability, aftermarket, etc. This is the simple version for $0.001/request. More endpoints coming soon. Please see our advanced premium tools: "Domain Suggestions TLDs" and "Domain Availability Bulk". Documentation at https://besta.domains/api'
   termsOfService: 'https://besta.domains/terms'
   contact:
     url: 'https://paulshorey.com'
