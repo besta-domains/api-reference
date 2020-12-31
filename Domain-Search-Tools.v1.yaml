@@ -9,6 +9,7 @@ info:
     name: Paul Shorey
 servers:
   - url: ' http://142.93.251.57'
+    description: server
 paths:
   /v1/whois:
     parameters: []
