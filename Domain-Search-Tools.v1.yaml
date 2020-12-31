@@ -10,14 +10,8 @@ info:
 servers:
   - url: ' http://142.93.251.57'
 paths:
-  '/v1/whois/{domain}':
-    parameters:
-      - schema:
-          type: string
-        name: domain
-        in: path
-        required: true
-        description: domain name + TLD (no spaces) (ex example.com)
+  /v1/whois:
+    parameters: []
     get:
       summary: Get User Info by User ID
       tags: []
@@ -30,5 +24,8 @@ paths:
         - schema:
             type: string
           in: query
+          name: domain
+          description: 'domain name + TLD (no spaces) (ex: example.com) Documentation at https://besta.domains/api'
+          required: true
 components:
   schemas: {}
