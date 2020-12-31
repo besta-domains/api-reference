@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: Domain Search Tools
   version: '1.0'
-  description: 'WHOIS, name servers, suggestions, availability, aftermarket, etc. This is the "simple" version for $0.0001/request. Please see our more advanced tools: "Domain Suggestions TLDs" and "Domain Availability Bulk". Documentation at https://besta.domains/api'
+  description: 'WHOIS, name servers, suggestions, availability, aftermarket, etc. This is the "simple + cheap" version for $0.0001/request. More endpoints coming soon. Please see our advanced premium tools: "Domain Suggestions TLDs" and "Domain Availability Bulk". Documentation at https://besta.domains/api'
   termsOfService: 'https://besta.domains/terms'
   contact:
     url: 'https://paulshorey.com'
@@ -17,7 +17,7 @@ paths:
         name: domain
         in: path
         required: true
-        description: 'domain name + TLD (no spaces) (ex: example.com)'
+        description: domain name + TLD (no spaces) (ex example.com)
     get:
       summary: Get User Info by User ID
       tags: []
@@ -25,7 +25,7 @@ paths:
         '404':
           description: User Not Found
       operationId: v1-whois
-      description: 'Entire WHOIS text, if available, AND the expiration date (YYYY-M-D) parsed from that text. Some TLDs'' (registries'') WHOIS records are more useful than others.'
+      description: 'Entire WHOIS text, if available, AND the expiration date (YYYY-M-D) parsed from that text. Some TLDs'' (registries'') WHOIS records are more useful than others. https://besta.domains/api'
       parameters:
         - schema:
             type: string
