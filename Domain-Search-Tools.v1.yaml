@@ -15,11 +15,6 @@ paths:
     get:
       summary: WHOIS record + Expiration date of domain
       tags: []
-      responses:
-        '404':
-          description: User Not Found
-      operationId: v1-whois
-      description: 'Entire WHOIS text, if available, AND the expiration date (YYYY-M-D) parsed from that text. Some TLDs'' (registries'') WHOIS records are more useful than others. https://besta.domains/api'
       parameters:
         - schema:
             type: string
@@ -27,5 +22,7 @@ paths:
           name: domain
           description: 'domain name + TLD (no spaces) (ex: example.com) Documentation at https://besta.domains/api'
           required: true
+      description: 'Entire WHOIS text, if available, AND the expiration date (YYYY-M-D) parsed from that text. Some TLDs'' (registries'') WHOIS records are more useful than others. https://besta.domains/api'
+      operationId: v1-whois
 components:
   schemas: {}
