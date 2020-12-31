@@ -13,7 +13,7 @@ paths:
   /v1/whois:
     parameters: []
     get:
-      summary: Get User Info by User ID
+      summary: WHOIS record + Expiration date of domain
       tags: []
       responses:
         '404':
