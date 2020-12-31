@@ -8,7 +8,7 @@ info:
     url: 'https://paulshorey.com'
     name: Paul Shorey
 servers:
-  - url: ' http://142.93.251.57'
+  - url: 'http://142.93.251.57'
     description: server
 paths:
   /v1/whois:
